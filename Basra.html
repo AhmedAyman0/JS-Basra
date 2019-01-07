@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charsset="utf.8">
+        <meta name= "description" content= "welcome to my game" >
+        <title> JS Project </title>
+        <link rel= "stylesheet" href= "basra.css"> 
+    </head>
+    <body>
+        <div class="BG">
+            <div class="computer_content">
+                 <div id="coImg">
+                   <!--  <div class="computer"> </div> -->
+                    <!-- <div class="insertBack"> </div>   -->
+                </div>
+                <div id="computer_score">
+                    <p> Player 2 (Computer) </p> 
+                    Score: <span id="compScore"> 0 </span>
+                </div>
+            </div> 
+            <div class="game_content">
+                <div class="deck">
+                    <div class="theName">
+                        Deck
+                    </div>
+                    <img id="1" class="myImg" src="images/1_of_clubs.png">
+                    <img id="1" class="myImg" src="images/1_of_diamonds.png">
+                    <img id="1" class="myImg" src="images/1_of_hearts.png">
+                    <img id="1" class="myImg" src="images/1_of_spades.png">
+                    <img id="2" class="myImg" src="images/2_of_clubs.png">
+                    <img id="2" class="myImg" src="images/2_of_diamonds.png">
+                    <img id="2" class="myImg" src="images/2_of_hearts.png">
+                    <img id="2" class="myImg" src="images/2_of_spades.png">
+                    <img id="3" class="myImg" src="images/3_of_clubs.png">
+                    <img id="3" class="myImg" src="images/3_of_diamonds.png">
+                    <img id="3" class="myImg" src="images/3_of_hearts.png">
+                    <img id="3" class="myImg" src="images/3_of_spades.png">
+                    <img id="4" class="myImg" src="images/4_of_clubs.png">
+                    <img id="4" class="myImg" src="images/4_of_diamonds.png">
+                    <img id="4" class="myImg" src="images/4_of_hearts.png">
+                    <img id="4" class="myImg" src="images/4_of_spades.png">
+                    <img id="5" class="myImg" src="images/5_of_clubs.png">
+                    <img id="5" class="myImg" src="images/5_of_diamonds.png">
+                    <img id="5" class="myImg" src="images/5_of_hearts.png">
+                    <img id="5" class="myImg" src="images/5_of_spades.png">
+                    <img id="6" class="myImg" src="images/6_of_clubs.png">
+                    <img id="6" class="myImg" src="images/6_of_diamonds.png">
+                    <img id="6" class="myImg" src="images/6_of_hearts.png">
+                    <img id="6" class="myImg" src="images/6_of_spades.png">
+                    <img id="7" class="myImg" src="images/7_of_clubs.png">
+                    <img id="7" class="myImg" alt="komy" src="images/7_of_diamonds.png">
+                    <img id="7" class="myImg" src="images/7_of_hearts.png">
+                    <img id="7" class="myImg" src="images/7_of_spades.png">
+                    <img id="8" class="myImg" src="images/8_of_clubs.png">
+                    <img id="8" class="myImg" src="images/8_of_diamonds.png">
+                    <img id="8" class="myImg" src="images/8_of_hearts.png">
+                    <img id="8" class="myImg" src="images/8_of_spades.png">
+                    <img id="9" class="myImg" src="images/9_of_clubs.png">
+                    <img id="9" class="myImg" src="images/9_of_diamonds.png">
+                    <img id="9" class="myImg" src="images/9_of_hearts.png">
+                    <img id="9" class="myImg" src="images/9_of_spades.png">
+                    <img id="10" class="myImg" src="images/10_of_clubs.png">
+                    <img id="10" class="myImg" src="images/10_of_diamonds.png">
+                    <img id="10" class="myImg" src="images/10_of_hearts.png">
+                    <img id="10" class="myImg" src="images/10_of_spades.png">
+                    <img id="11" class="myImg" src="images/jack_of_clubs.png">
+                    <img id="11" class="myImg" src="images/jack_of_diamonds.png">
+                    <img id="11" class="myImg" src="images/jack_of_hearts.png">
+                    <img id="11" class="myImg" src="images/jack_of_spades.png">
+                    <img id="12" class="myImg" src="images/king_of_clubs.png">
+                    <img id="12" class="myImg" src="images/king_of_diamonds.png">
+                    <img id="12" class="myImg" src="images/king_of_hearts.png">
+                    <img id="12" class="myImg" src="images/king_of_spades.png">
+                    <img id="13" class="myImg" src="images/queen_of_clubs.png">
+                    <img id="13" class="myImg" src="images/queen_of_diamonds.png">
+                    <img id="13" class="myImg" src="images/queen_of_hearts.png">
+                    <img id="13" class="myImg" src="images/queen_of_spades.png">
+                    <div class="backImages">
+                        <img class="facedown" src="images/facedown.png">
+                        <img class="facedown" src="images/facedown.png">
+                        <img class="facedown" src="images/facedown.png">
+                        <img class="facedown" src="images/facedown.png">
+                    </div>
+                </div>
+                <div id="ground">
+                    <button id="myBtn"> Start </button>
+                </div>
+            </div>
+            <div id="player_content">
+                <div id="player"></div>
+                <div id="player_score">
+                    <p>Player 1 (You) </p> 
+                    Score: <span id="playerScore"> 0 </span>
+                </div>
+            </div>
+        </div>
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.js"
+                integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                crossorigin="anonymous"></script>
+<!--         <script src="images.js"></script> -->
+        <script src="js/basra.js"></script>        
+<!--         <script src="basra1.js"></script>         -->
+    </body>
+</html>
+
+

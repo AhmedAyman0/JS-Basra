@@ -438,7 +438,7 @@ function cVal(combs)
             // if the card is not a number take it as string
             if(isNaN(combs[i][j].value))
             {   
-                sum=combs[i][j].value;
+                sum+=combs[i][j].value;
             }
             // if it's a number , parse and sum
             else{
@@ -514,12 +514,13 @@ function play2(player_array,__score)
            
         }
         console.log("selected"+selected.value);
-        console.log("_selected"+_selected)
+        console.log(_selected)
         if(selected.length)
         {
             match_at_least_once = 1;
 
         }
+        console.log(selected)
         for (let i = 0; i < selected.length; i++) {
             // if multiple cards to collect
             if (selected[i].length > 1) {
@@ -529,7 +530,7 @@ function play2(player_array,__score)
                     //remove from ground div
                     $("#"+id).remove();
                     //remove from ground arr
-                    gr_cards_arr.splice(_selected[i][j],1);
+                    gr_cards_arr.splice(_selected[i][0],1);
                     //Increase Score
                     __score.score += 1;
                     __score.div_element.innerText = __score.score;
